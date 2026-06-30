@@ -15,9 +15,3 @@ A simple and responsive To-Do List web application built using HTML, CSS, and Ja
 
 ## Purpose
 This project was built to practice DOM manipulation and improve front-end development skills.
-
-## Screenshot
-(Add your screenshot here)
-
-## Author
-Hayat Ali
