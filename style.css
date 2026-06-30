@@ -1,0 +1,135 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  transition: all 0.3s ease;
+  background: #f4f4f4;
+  color: #222;
+}
+
+.app {
+  background: white;
+  width: 400px;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  text-align: center;
+  animation: fadeIn 0.8s ease;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.input-section {
+  display: flex;
+  gap: 10px;
+}
+
+input {
+  flex: 1;
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+}
+
+input:focus {
+  border-color: #667eea;
+}
+
+button {
+  padding: 12px 15px;
+  border: none;
+  background: #711515;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: #3d1717;
+  transform: scale(1.05);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+li {
+  background: #711515;
+  color: white;
+  margin: 10px 0;
+  padding: 12px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.3s;
+  animation: slideIn 0.3s ease;
+}
+
+li:hover {
+  transform: scale(1.02);
+}
+
+.delete {
+  background: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+#themeToggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #333;
+  color: white;
+  transition: 0.3s;
+}
+
+#themeToggle:hover {
+  transform: scale(1.05);
+}
+.dark-mode {
+  background: #121212;
+  color: rgb(250, 243, 243);
+}
+.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
